@@ -1,0 +1,10 @@
+#loading { 
+	outline: none; 
+	border: none; 
+	background: transparent 
+}
+
+:where(h1) {
+	margin-block: 0.67em;
+	font-size: 2em;
+}
