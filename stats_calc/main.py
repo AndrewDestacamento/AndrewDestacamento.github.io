@@ -1,5 +1,5 @@
 from js import document, window, Uint8Array
-from pyodide.ffi.wrappers import add_event_listener
+from pyodide.ffi.wrappers import add_event_listener # type: ignore
 import io
 import csv
 

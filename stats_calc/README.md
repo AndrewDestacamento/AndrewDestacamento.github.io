@@ -9,7 +9,8 @@ This project uses Python and R code to run statistical methods and generate rele
 
 ## Resources
 
-- PyScript - []
+- pyscript.recipies - [File Upload](https://pyscript.recipes/latest/basic/file-upload/)
+
 
 ## Special Thanks
 - Julia F. for feedback
