@@ -4,14 +4,11 @@ This project uses Python and R code to run statistical methods and generate rele
 
 ## Libraries Used
 
-- [PyScript](https://pyscript.net/)
 - [rpy2](https://rpy2.github.io/)
 
 ## Resources
 
-- pyscript.recipies - [File Upload](https://pyscript.recipes/latest/basic/file-upload/)
-
 
 ## Special Thanks
 - Julia F. for feedback
-- Lillianmay L. for Feedback.
+- Lillianmay L. for feedback.
