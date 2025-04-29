@@ -31,11 +31,11 @@ normality = function(data, variable) {
         shapiro_results$p.value,
         "\n")
     # interpret the p value results
-    cat("At a 5% level of significance, the response variable ")
-    if (shapiro_results$p.value < 0.05) {
-      cat("is not normally distributed because the p-value is lower than 5%.")
+    cat("At a(n) ", 100*alpha, "% level of significance, the response variable ")
+    if (shapiro_results$p.value < alpha) {
+      cat("is not normally distributed because the p-value is lower than ", 100*alpha, "%.")
     } else {
-      cat("might be normally distributed because the p-value is greater than or equal to 5%.")
+      cat("might be normally distributed because the p-value is greater than or equal to ", 100*alpha, "%.")
     }
     pause()
     
