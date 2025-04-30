@@ -1,25 +1,11 @@
 library(shiny)
-library(bslib)
 source("functions.R")
 
 ui =
-  page_sidebar(
-    title = "Stats Calculator",
+  fluidPage(
+    titlePanel("Stats Calculator"),
     
-    fileInput("file", h3(".csv file input"), accept = "text/csv"),
-    column(6, verbatimTextOutput("validation")),
-    
-    column(6, verbatimTextOutput("descriptive")),
-    
-    column(9, verbatimTextOutput("normality_text")),
-    column(4, plotOutput("box_plot")),
-    column(4, plotOutput("q.q_plot")),
-    
-    column(9, verbatimTextOutput("subset_model")),
-    column(4, plotOutput("q.q_res")),
-    column(4, plotOutput("outlier")),
-    
-    sidebar = sidebar(
+    sidebarLayout(sidebarPanel(
       selectInput(
         "alpha",
         "Significance level (α or alpha): ",
@@ -27,6 +13,21 @@ ui =
         selected = 0.05
       ),
       radioButtons("response", "Response variable", "N/A"),
+    ),
+    mainPanel(
+      
+      fileInput("file", h3(".csv file input"), accept = "text/csv"),
+      column(6, verbatimTextOutput("validation")),
+      
+      column(6, verbatimTextOutput("descriptive")),
+      
+      column(9, verbatimTextOutput("normality_text")),
+      column(4, plotOutput("box_plot")),
+      column(4, plotOutput("q.q_plot")),
+      
+      column(9, verbatimTextOutput("subset_model")),
+      column(4, plotOutput("q.q_res")),
+      column(4, plotOutput("outlier")),)
     )
   )
 
