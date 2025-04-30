@@ -4,7 +4,7 @@ This project uses R code to run statistical methods and generate relevant plots.
 
 ## Libraries Used
 
-- [shinylive](https://posit-dev.github.io/r-shinylive/)
+- Schloerke B, Chang W, Stagg G, Aden-Buie G (2024). *shinylive: Run 'shiny' Applications in the Browser*. R package version 0.3.0, https://github.com/posit-dev/r-shinylive, https://posit-dev.github.io/r-shinylive/. 
 
 ## Resources
 
